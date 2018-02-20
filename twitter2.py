@@ -20,35 +20,36 @@ def get_data(acct):
     #Changes start here
 
     print('')
-    #acct = input('Enter Twitter Account:')
     url = twurl.augment(TWITTER_URL,
                         {'screen_name': acct, 'count': '10'})
-    #print('Retrieving', url)
     connection = urllib.request.urlopen(url, context=ctx)
     data = connection.read().decode()
 
     js = json.loads(data)
-    #print(json.dumps(js, indent=2))
 
     headers = dict(connection.getheaders())
-    #print('Remaining', headers['x-rate-limit-remaining'])
+
+    #Here I searching friends and their locations
+
     names = []
     locations = []
     for u in js['users']:
         names.append((u['screen_name']))
         locations.append(u['location'])
         if 'status' not in u:
-            #print('   * No status found')
             continue
         s = u['status']['text']
-        #print('  ', s[:50])
 
-    #for i in range(len(names)):
-     #   print(names[i], "is at", locations[i])
     return names, locations
 
 
 def createmap(name, place):
+    """
+    list, list -> None
+    this function uses geopy to find cordinates and mark it on map
+    also this function creates map
+
+    """
     map = folium.Map(zoom_start=4, tiles="Mapbox bright")
     geolocator = Nominatim()
 
@@ -65,5 +66,4 @@ def createmap(name, place):
     map.add_child(feature_group)
     map.save("static/Friends.html")
 
-#print(len(names), len(locations))
-#createmap(names, locations)
+
