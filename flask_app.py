@@ -10,12 +10,9 @@ app = Flask(__name__)
 
 @app.route('/createmap', methods=["POST"])
 def mapcreate():
-    """
-    :return:
-    """
 
     name = request.form['name']
-    names, place = twitter2.get_data(name)
+    names, place = twitter2.get_data(name)[0], twitter2.get_data(name)[1]
     twitter2.createmap(names, place)
     return redirect(url_for("static", filename="Friends.html"))
 

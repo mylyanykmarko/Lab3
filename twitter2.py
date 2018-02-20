@@ -23,7 +23,7 @@ def get_data(acct):
     #acct = input('Enter Twitter Account:')
     url = twurl.augment(TWITTER_URL,
                         {'screen_name': acct, 'count': '10'})
-    print('Retrieving', url)
+    #print('Retrieving', url)
     connection = urllib.request.urlopen(url, context=ctx)
     data = connection.read().decode()
 
@@ -31,7 +31,7 @@ def get_data(acct):
     #print(json.dumps(js, indent=2))
 
     headers = dict(connection.getheaders())
-    print('Remaining', headers['x-rate-limit-remaining'])
+    #print('Remaining', headers['x-rate-limit-remaining'])
     names = []
     locations = []
     for u in js['users']:
