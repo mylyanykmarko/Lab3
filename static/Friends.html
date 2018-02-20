@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_248e19c0cafb40ca996220d83776afb1 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_248e19c0cafb40ca996220d83776afb1" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_248e19c0cafb40ca996220d83776afb1 = L.map(
+                                  'map_248e19c0cafb40ca996220d83776afb1',
+                                  {center: [0,0],
+                                  zoom: 1,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_14361b75f3754ac081898476acf0ce96 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_248e19c0cafb40ca996220d83776afb1);
+        
+    
+            var feature_group_4217bbdecb6547ab913021924b594c6b = L.featureGroup(
+                ).addTo(map_248e19c0cafb40ca996220d83776afb1);
+        
+    
+
+            var marker_09d7afb3aa664205b080738e59f3b2cb = L.marker(
+                [42.3788774,-72.032366],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4217bbdecb6547ab913021924b594c6b);
+            
+    
+            var popup_e3567662c3cd49b1aaf83a742467c896 = L.popup({maxWidth: '300'});
+
+            
+                var html_d8074ab565f3434496664420d67650c7 = $('<div id="html_d8074ab565f3434496664420d67650c7" style="width: 100.0%; height: 100.0%;">DevalPatrick</div>')[0];
+                popup_e3567662c3cd49b1aaf83a742467c896.setContent(html_d8074ab565f3434496664420d67650c7);
+            
+
+            marker_09d7afb3aa664205b080738e59f3b2cb.bindPopup(popup_e3567662c3cd49b1aaf83a742467c896);
+
+            
+        
+    
+
+            var marker_9d11b97997f740b1b4d6057a52fdfde2 = L.marker(
+                [52.5170365,13.3888599],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4217bbdecb6547ab913021924b594c6b);
+            
+    
+            var popup_7f520fa64fea4faca9af729202acba99 = L.popup({maxWidth: '300'});
+
+            
+                var html_564a4c879e094988a0a96c837df4d5a9 = $('<div id="html_564a4c879e094988a0a96c837df4d5a9" style="width: 100.0%; height: 100.0%;">AndreLohse</div>')[0];
+                popup_7f520fa64fea4faca9af729202acba99.setContent(html_564a4c879e094988a0a96c837df4d5a9);
+            
+
+            marker_9d11b97997f740b1b4d6057a52fdfde2.bindPopup(popup_7f520fa64fea4faca9af729202acba99);
+
+            
+        
+    
+
+            var marker_f02134ccf0444c9e9bb3efb6e10169fa = L.marker(
+                [34.054935,-118.244476],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4217bbdecb6547ab913021924b594c6b);
+            
+    
+            var popup_851da2ad5b7143db8135c5197e480c98 = L.popup({maxWidth: '300'});
+
+            
+                var html_2a312ee5071a43f68c3c80df2f51f9fd = $('<div id="html_2a312ee5071a43f68c3c80df2f51f9fd" style="width: 100.0%; height: 100.0%;">themjeans</div>')[0];
+                popup_851da2ad5b7143db8135c5197e480c98.setContent(html_2a312ee5071a43f68c3c80df2f51f9fd);
+            
+
+            marker_f02134ccf0444c9e9bb3efb6e10169fa.bindPopup(popup_851da2ad5b7143db8135c5197e480c98);
+
+            
+        
+    
+
+            var marker_55a487847bd649ac88251cea624f93ce = L.marker(
+                [38.8949549,-77.0366456],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4217bbdecb6547ab913021924b594c6b);
+            
+    
+            var popup_0d1ed098d03d41db8269a2c5b53e045e = L.popup({maxWidth: '300'});
+
+            
+                var html_96bc99224ffd44c1a30d2395b1b14ed3 = $('<div id="html_96bc99224ffd44c1a30d2395b1b14ed3" style="width: 100.0%; height: 100.0%;">MsTurnageYoung</div>')[0];
+                popup_0d1ed098d03d41db8269a2c5b53e045e.setContent(html_96bc99224ffd44c1a30d2395b1b14ed3);
+            
+
+            marker_55a487847bd649ac88251cea624f93ce.bindPopup(popup_0d1ed098d03d41db8269a2c5b53e045e);
+
+            
+        
+</script>
